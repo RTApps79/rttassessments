@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadTherapy E-Workbook</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <h1>Welcome to RadTherapy E-Workbooks</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Empowering the Next Generation of Radiologic Technologists</h2> 
+            <p>RadTherapy e-Workbooks provide a dynamic learning platform for students and instructors in the field of radiologic technology. Our comprehensive and interactive modules cover a wide range of topics, from radiography and radiation therapy to nuclear medicine, sonography, and MRI. With realistic simulations, case studies, and data-driven assessments, RadTherapy e-Workbooks offer a personalized learning experience that helps students achieve mastery and advance their careers.</p> 
+        </section>
+        <section class="login">
+            <h2>Login</h2>
+            <div class="container">
+                <div class="form-group">
+                    <h3>Students</h3>
+                    <form action="/student_login" method="post">
+                        <label for="student_username">Username:</label>
+                        <input type="text" id="student_username" name="student_username" required>
+                        <label for="student_password">Password:</label>
+                        <input type="password" id="student_password" name="student_password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+                <div class="form-group">
+                    <h3>Instructors</h3>
+                    <form action="/instructor_login" method="post">
+                        <label for="instructor_username">Username:</label>
+                        <input type="text" id="instructor_username" name="instructor_username" required>
+                        <label for="instructor_password">Password:</label>
+                        <input type="password" id="instructor_password" name="instructor_password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="signup">
+            <h2>Signup</h2>
+            <div class="container">
+                <div class="form-group">
+                    <h3>Students</h3>
+                    <form action="/student_signup" method="post">
+                        <label for="student_email">Email:</label>
+                        <input type="text" id="student_email" name="student_email" required>
+                        <label for="student_new_password">Password:</label>
+                        <input type="password" id="student_new_password" name="student_new_password" required>
+                        <button type="submit">Signup</button>
+                    </form>
+                </div>
+                <div class="form-group">
+                    <h3>Instructors</h3>
+                    <form action="/instructor_signup" method="post">
+                        <label for="instructor_email">Email:</label>
+                        <input type="text" id="instructor_email" name="instructor_email" required>
+                        <label for="instructor_new_password">Password:</label>
+                        <input type="password" id="instructor_new_password" name="instructor_new_password" required>
+                        <button type="submit">Signup</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
